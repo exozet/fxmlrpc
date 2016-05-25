@@ -49,7 +49,7 @@ final class HttpAdapterTransport implements TransportInterface
             $request = $this->messageFactory->createRequest(
                 'POST',
                 $endpoint,
-                ['Content-Type' => 'text/xml; charset=UTF-8'],
+                ['Content-Type' => 'text/xml; charset=utf-8'],
                 $payload
             );
 
