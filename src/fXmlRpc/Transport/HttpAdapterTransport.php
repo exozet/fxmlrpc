@@ -42,7 +42,7 @@ final class HttpAdapterTransport implements TransportInterface
     public function send($endpoint, $payload)
     {
         try {
-            $response = $this->httpAdapter->post($endpoint, ['Content-Type' => 'text/xml; charset=UTF-8'], $payload);
+            $response = $this->httpAdapter->post($endpoint, ['Content-Type' => 'text/xml; charset=utf-8'], $payload);
         } catch (HttpAdapterException $e) {
             throw TransportException::transportError($e);
         }
